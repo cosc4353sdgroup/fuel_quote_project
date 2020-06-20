@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<head>
+<title>Fuel Quotes</title>
+</head>
+
+<style>
+  body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stripes {
+    width: 100%;
+    height: 95vh;
+    align-items: center;
+    background: repeating-linear-gradient(120deg,
+        #CCFFFF,
+        #CCFFFF 30px,
+        #CCFFFF 30px,
+        rgb(184, 184, 184) 80px);
+  }
+
+  #topbar {
+    width: 80%;
+    height: 5vw;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #box-1 {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Lobster;
+    font-size: 100%;
+    height: 85%;
+    width: 49.5%;
+  }
+
+  a {
+    color: white;
+    font-family: Lobster;
+    font-size: 100%;
+    text-decoration: none;
+  }
+
+  .entry {
+    width: 300px;
+    font-size: 2.5vh;
+    font-family: Lobster;
+    text-align: center;
+    margin-top: 15px;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    
+  }
+
+  .curInfo{
+    font-size: 2.5vh;
+    font-family: Lobster;
+    text-align: left;
+    text-indent: 5px;
+    background: black;
+    color: white;
+    width: 300px;
+    margin-top: 16.5px;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    align-self: center;
+  }
+
+  .profManBox{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .fieldEntryBox{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fieldLabels{
+    margin-top: 5px;
+    font-size: 4vh;
+    font-family: Lobster;
+  }
+  
+</style>
+
+
+<body class="stripes">
+
+
+  <div id="topbar">
+    <div id="box-1"><a href="profileman.html">Manage User Profile</a></div>
+    <div id="box-1"><a href="quotehistory.html">See Fuel Quote History</a></div>
+  </div>
+  <div class="profManBox">
+  <div class="fieldEntryBox">
+  <div class="fieldLabels">Enter Quote Details</div>
+  <form class="formButtons">
+  <input class="entry" type="text" name="gallonsReq" placeholder="Gallons Requested">
+  <input class="entry" type="text" name="delAddress" placeholder="Delivery Address">
+  <input class="entry" type="text" name="delDate" placeholder="Delivery Date">
+  <input class="entry" type="submit" value="Submit Request">
+  </form>
+    <div class="fieldLabels">-------------------</div>
+    <div class="curInfo">Suggested Price / gallon: $0.00 </div>
+    <div class="curInfo">Total Amount Due: $0.00 </div>
+  </div>
+  
+  
+
+
+</body>
+
+</html>

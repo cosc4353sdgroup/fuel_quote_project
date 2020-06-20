@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<head>
+<title>Profile Manager</title>
+</head>
+
+<style>
+  body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stripes {
+    width: 100%;
+    height: 95vh;
+    align-items: center;
+    background: repeating-linear-gradient(120deg,
+        #CCFFFF,
+        #CCFFFF 30px,
+        #CCFFFF 30px,
+        rgb(184, 184, 184) 80px);;
+  }
+
+  #topbar {
+    width: 80%;
+    height: 5vw;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #box-1 {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Lobster;
+    font-size: 100%;
+    height: 85%;
+    width: 49.5%;
+  }
+
+  a {
+    color: white;
+    font-family: Lobster;
+    font-size: 100%;
+    text-decoration: none;
+  }
+
+  .entry {
+    width: 50%;
+    font-size: 2.5vh;
+    font-family: Lobster;
+    text-align: center;
+    margin-top: 15px;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    
+  }
+
+  .curInfo{
+    font-size: 2.5vh;
+    font-family: Lobster;
+    text-align: left;
+    text-indent: 5px;
+    background: black;
+    color: white;
+    width: 85%;
+    margin-top: 16.5px;
+    margin-left: 15px;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+  }
+
+  .profManBox{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fieldEntryBox{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fieldLabels{
+    margin-top: 5px;
+    font-size: 4vh;
+    font-family: Lobster;
+  }
+  
+</style>
+
+
+<body class="stripes">
+
+
+  <div id="topbar">
+    <div id="box-1"><a href="quotepage.html">Get Fuel Quote</a></div>
+    <div id="box-1"><a href="quotehistory.html">See Fuel Quote History</a></div>
+  </div>
+  <div class="profManBox">
+  <div class="fieldEntryBox">
+  <div class="fieldLabels">Input Updated Information</div>
+  <form class="formButtons">
+  <input class="entry" type="text" name="fullname" placeholder="Full Name">
+  <input class="entry" type="text" name="address1" placeholder="Address One">
+  <input class="entry" type="text" name="address2" placeholder="Address Two">
+  <input class="entry" type="text" name="city" placeholder="City">
+  <select class="entry" name="state">
+    <option value="">-- Select State --</option>
+    <option value="AL">Alabama</option>
+    <option value="AK">Alaska</option>
+    <option value="AZ">Arizona</option>
+    <option value="AR">Arkansas</option>
+    <option value="CA">California</option>
+    <option value="CO">Colorado</option>
+    <option value="CT">Connecticut</option>
+    <option value="DE">Delaware</option>
+    <option value="FL">Florida</option>
+    <option value="GA">Georgia</option>
+    <option value="HI">Hawaii</option>
+    <option value="ID">Idaho</option>
+    <option value="IL">Illinois</option>
+    <option value="IN">Indiana</option>
+    <option value="IA">Iowa</option>
+    <option value="KS">Kansas</option>
+    <option value="KY">Kentucky</option>
+    <option value="LA">Louisiana</option>
+    <option value="ME">Maine</option>
+    <option value="MD">Maryland</option>
+    <option value="MA">Massachusetts</option>
+    <option value="MI">Michigan</option>
+    <option value="MN">Minnesota</option>
+    <option value="MI">Mississippi</option>
+    <option value="MO">Missouri</option>
+    <option value="MT">Montana</option>
+    <option value="NE">Nebraska</option>
+    <option value="NV">Nevada</option>
+    <option value="NH">New Hampshire</option>
+    <option value="NJ">New Jersey</option>
+    <option value="NM">New Mexico</option>
+    <option value="NY">New York</option>
+    <option value="NC">North Carolina</option>
+    <option value="ND">North Dakota</option>
+    <option value="OH">Ohio</option>
+    <option value="OK">Oklahoma</option>
+    <option value="OR">Oregon</option>
+    <option value="PA">Pennsylvania</option>
+    <option value="RI">Rhode Island</option>
+    <option value="SC">South Carolina</option>
+    <option value="SD">South Dakota</option>
+    <option value="TN">Tennessee</option>
+    <option value="TX">Texas</option>
+    <option value="UT">Utah</option>
+    <option value="VT">Vermont</option>
+    <option value="VA">Virginia</option>
+    <option value="WA">Washington</option>
+    <option value="WV">West Virginia</option>
+    <option value="WI">Wisconsin</option>
+    <option value="WY">Wyoming</option>
+  </select>
+  <input class="entry" type="text" name="zipcode" placeholder="Zip Code">
+  <input class="entry" type="submit" value="Update Information">
+  </form>
+  </div>
+  <div class="fieldEntryBox">
+    <div class="fieldLabels">Current Information</div>
+    <div class="curInfo">Full Name: </div>
+    <div class="curInfo">Address One: </div>
+    <div class="curInfo">Address Two: </div>
+    <div class="curInfo">City: </div>
+    <div class="curInfo">State: </div>
+    <div class="curInfo">Zip Code: </div>
+  </div>
+  
+
+
+</body>
+
+</html>
