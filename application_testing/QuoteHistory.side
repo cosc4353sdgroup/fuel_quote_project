@@ -1,0 +1,69 @@
+{
+   {
+    "id": "57ed7a56-8d9a-4c1f-b80a-bb47d9a3be4b",
+    "name": "Quote History",
+    "commands": [{
+      "id": "d7070503-1800-4cb9-b9ef-025e004c860c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37bf6549-ea2c-4ab1-95de-d9d244924b1c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1000x890",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "caa16dd6-0a5d-4f72-b781-ea954ebda5c2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Fuel/",
+      "targets": [
+        ["linkText=Fuel/", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Fuel/')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Fuel/')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Fuel/')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3ab8b95-d74f-4177-8573-09702ec60643",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Quote History",
+      "targets": [
+        ["linkText=Quote History", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Quote History')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'history.php')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Quote History')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b74906a-4c53-40d0-a784-d7aac7acb2b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "28b01809-dc60-4f3e-a3b7-d0be19f9365f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8fba7d1f-15b1-4644-b7f6-760e638016e0"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}

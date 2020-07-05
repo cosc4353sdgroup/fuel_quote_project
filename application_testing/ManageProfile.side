@@ -1,0 +1,202 @@
+{
+  {
+    {
+    "id": "c5c69a3a-4e15-460e-9cf4-6ab84a5bdcd5",
+    "name": "Manage Profile",
+    "commands": [{
+      "id": "1315397e-dcb8-4522-9050-0f416e5ad149",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08359d05-133e-4825-ba73-91d4cf4a4562",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1000x890",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aca60087-bc8a-49eb-b7b0-b239ee358ea5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Fuel/",
+      "targets": [
+        ["linkText=Fuel/", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Fuel/')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Fuel/')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Fuel/')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "18278759-688b-427b-b62a-aad38bdd1c1f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Manage Profile",
+      "targets": [
+        ["linkText=Manage Profile", "linkText"],
+        ["css=ul:nth-child(2) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Manage Profile')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'profilemanager.php')]", "xpath:href"],
+        ["xpath=//ul[2]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Manage Profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4c3ba85-6dc7-414b-b5a0-daea4e9fd877",
+      "comment": "",
+      "command": "click",
+      "target": "name=fullname",
+      "targets": [
+        ["name=fullname", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='fullname']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a658c313-ef4a-4d15-83c1-fa497c13c7a3",
+      "comment": "",
+      "command": "type",
+      "target": "name=fullname",
+      "targets": [
+        ["name=fullname", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='fullname']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Ron Smith"
+    }, {
+      "id": "9d3dbd91-e6a1-49d3-bb2b-7222c8e33d0a",
+      "comment": "",
+      "command": "type",
+      "target": "name=addy",
+      "targets": [
+        ["name=addy", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='addy']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "5145 Window Shopper"
+    }, {
+      "id": "4ee1f389-c718-4538-8358-969262e248a5",
+      "comment": "",
+      "command": "click",
+      "target": "name=city",
+      "targets": [
+        ["name=city", "name"],
+        ["css=input:nth-child(11)", "css:finder"],
+        ["xpath=//input[@name='city']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "624517ba-e14f-4e02-8aaf-d9a0fcac2268",
+      "comment": "",
+      "command": "type",
+      "target": "name=city",
+      "targets": [
+        ["name=city", "name"],
+        ["css=input:nth-child(11)", "css:finder"],
+        ["xpath=//input[@name='city']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Windmill Hill"
+    }, {
+      "id": "ce502fed-b3d6-439a-b275-fee9cfd48469",
+      "comment": "",
+      "command": "click",
+      "target": "id=state",
+      "targets": [
+        ["id=state", "id"],
+        ["name=state", "name"],
+        ["css=#state", "css:finder"],
+        ["xpath=//select[@id='state']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a0f789b-50d5-4e2a-9f22-ecc57d7ca5a3",
+      "comment": "",
+      "command": "select",
+      "target": "id=state",
+      "targets": [],
+      "value": "label=Texas"
+    }, {
+      "id": "fd3af284-b70b-4ecf-9005-090c4ce664e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(44)",
+      "targets": [
+        ["css=option:nth-child(44)", "css:finder"],
+        ["xpath=//option[@value='TX']", "xpath:attributes"],
+        ["xpath=//select[@id='state']/option[44]", "xpath:idRelative"],
+        ["xpath=//option[44]", "xpath:position"],
+        ["xpath=//option[contains(.,'Texas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2df175e1-d9c1-4a3a-ad16-6760491f2d88",
+      "comment": "",
+      "command": "click",
+      "target": "name=zip",
+      "targets": [
+        ["name=zip", "name"],
+        ["css=input:nth-child(17)", "css:finder"],
+        ["xpath=//input[@name='zip']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4402f64-6629-4b8c-8e49-4191ff2f99c6",
+      "comment": "",
+      "command": "type",
+      "target": "name=zip",
+      "targets": [
+        ["name=zip", "name"],
+        ["css=input:nth-child(17)", "css:finder"],
+        ["xpath=//input[@name='zip']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "89625"
+    }, {
+      "id": "35747e74-570c-411f-a076-dfefb3ff03dd",
+      "comment": "",
+      "command": "click",
+      "target": "name=update-submit",
+      "targets": [
+        ["name=update-submit", "name"],
+        ["css=button:nth-child(19)", "css:finder"],
+        ["xpath=//button[@name='update-submit']", "xpath:attributes"],
+        ["xpath=//body/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "531a9ca6-078c-48fc-b785-e496e1797056",
+      "comment": "",
+      "command": "click",
+      "target": "css=.status-box > form",
+      "targets": [
+        ["css=.status-box > form", "css:finder"],
+        ["xpath=//form[@action='includes/profilemanager.inc.php']", "xpath:attributes"],
+        ["xpath=//body/div/form", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "28b01809-dc60-4f3e-a3b7-d0be19f9365f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8fba7d1f-15b1-4644-b7f6-760e638016e0"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+  }
+}

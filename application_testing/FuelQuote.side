@@ -1,0 +1,186 @@
+{
+   {
+    "id": "f444daa6-493e-41c7-82d4-6b141a07ecf7",
+    "name": "Fuel Quote",
+    "commands": [{
+      "id": "8a30adc1-049b-4520-82c8-404bca455e1f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09c1cbe5-ff12-4dab-ab19-0787c58259e1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1000x890",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b4d365b-8111-4a1d-b8e0-e7754bc621b0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Fuel/",
+      "targets": [
+        ["linkText=Fuel/", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Fuel/')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Fuel/')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Fuel/')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08e0a9f6-c63a-493b-b496-3e158e30e1a5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Fuel Quote",
+      "targets": [
+        ["linkText=Fuel Quote", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Fuel Quote')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'fuelquote.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Fuel Quote')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2e34d12-786d-4cf6-a075-96cd5affd8cd",
+      "comment": "",
+      "command": "click",
+      "target": "name=gallonsReq",
+      "targets": [
+        ["name=gallonsReq", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='gallonsReq']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcbcbbd3-4105-499e-87a1-f0d579a7a4b7",
+      "comment": "",
+      "command": "type",
+      "target": "name=gallonsReq",
+      "targets": [
+        ["name=gallonsReq", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='gallonsReq']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "500"
+    }, {
+      "id": "6b43487c-39be-42e6-a033-f08769e1b8db",
+      "comment": "",
+      "command": "click",
+      "target": "id=delState",
+      "targets": [
+        ["id=delState", "id"],
+        ["name=delState", "name"],
+        ["css=#delState", "css:finder"],
+        ["xpath=//select[@id='delState']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70e8c371-8d81-4805-baed-fc18f7743dcf",
+      "comment": "",
+      "command": "select",
+      "target": "id=delState",
+      "targets": [],
+      "value": "label=North Carolina"
+    }, {
+      "id": "c78aac00-564f-45b1-a934-a888c06626f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(34)",
+      "targets": [
+        ["css=option:nth-child(34)", "css:finder"],
+        ["xpath=//option[@value='NC']", "xpath:attributes"],
+        ["xpath=//select[@id='delState']/option[34]", "xpath:idRelative"],
+        ["xpath=//option[34]", "xpath:position"],
+        ["xpath=//option[contains(.,'North Carolina')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f1773a7-964f-4242-8785-874a19913965",
+      "comment": "",
+      "command": "click",
+      "target": "name=delDate",
+      "targets": [
+        ["name=delDate", "name"],
+        ["css=input:nth-child(9)", "css:finder"],
+        ["xpath=//input[@name='delDate']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "530ee9b5-fb01-4f20-8896-d5c89c70879c",
+      "comment": "",
+      "command": "click",
+      "target": "name=delDate",
+      "targets": [
+        ["name=delDate", "name"],
+        ["css=input:nth-child(9)", "css:finder"],
+        ["xpath=//input[@name='delDate']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5dcced7-1b32-42d9-9dc7-28e9ca363fa4",
+      "comment": "",
+      "command": "type",
+      "target": "name=delDate",
+      "targets": [
+        ["name=delDate", "name"],
+        ["css=input:nth-child(9)", "css:finder"],
+        ["xpath=//input[@name='delDate']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2020-12-20"
+    }, {
+      "id": "de5a7949-919d-43c7-bfba-d3713e6d98f2",
+      "comment": "",
+      "command": "click",
+      "target": "name=quote-submit",
+      "targets": [
+        ["name=quote-submit", "name"],
+        ["css=button:nth-child(11)", "css:finder"],
+        ["xpath=//button[@name='quote-submit']", "xpath:attributes"],
+        ["xpath=//body/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Request Quote!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e42aef6f-f440-4a07-89b0-69153e0b4594",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8a5bb2d-30bb-40d8-9259-09b2a10347d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Total Quote: 883.74')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "28b01809-dc60-4f3e-a3b7-d0be19f9365f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8fba7d1f-15b1-4644-b7f6-760e638016e0"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}

@@ -1,0 +1,122 @@
+{
+  "id": "6cef87fb-cdbb-4ff6-90c8-5312c2101402",
+  "version": "2.0",
+  "name": "CodeCoverageReport",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "5b7a7ee1-1561-4098-8968-b3afb530f9a9",
+    "name": "LogOut",
+    "commands": [{
+      "id": "1a9986da-d6f2-432f-8e09-e7d81163b32e",
+      "comment": "",
+      "command": "open",
+      "target": "/Fuel/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "516faa14-80b6-4241-9c34-de56341825b9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2951960c-b01e-4339-80c3-13292cc4a273",
+      "comment": "",
+      "command": "click",
+      "target": "name=login-submit",
+      "targets": [
+        ["name=login-submit", "name"],
+        ["css=button", "css:finder"],
+        ["xpath=//button[@name='login-submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c94c157-e73f-4fe2-a580-cc71381bd25c",
+      "comment": "",
+      "command": "click",
+      "target": "name=mailuid",
+      "targets": [
+        ["name=mailuid", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='mailuid']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6af9b600-24f0-4847-9745-3129fb8ad773",
+      "comment": "",
+      "command": "type",
+      "target": "name=mailuid",
+      "targets": [
+        ["name=mailuid", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='mailuid']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testing1"
+    }, {
+      "id": "1b0d00b5-e0d1-47e3-af26-6201c2fd6250",
+      "comment": "",
+      "command": "click",
+      "target": "name=pwd",
+      "targets": [
+        ["name=pwd", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='pwd']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11378361-b83b-4a1a-8701-7b094863a726",
+      "comment": "",
+      "command": "type",
+      "target": "name=pwd",
+      "targets": [
+        ["name=pwd", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='pwd']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "1f4b6d36-7e06-4fe9-a50b-277962ab306e",
+      "comment": "",
+      "command": "click",
+      "target": "name=login-submit",
+      "targets": [
+        ["name=login-submit", "name"],
+        ["css=button", "css:finder"],
+        ["xpath=//button[@name='login-submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b4a8992-a795-4b7e-8a5e-eccfd5ed47d2",
+      "comment": "",
+      "command": "click",
+      "target": "name=logout-submit",
+      "targets": [
+        ["name=logout-submit", "name"],
+        ["css=button", "css:finder"],
+        ["xpath=//button[@name='logout-submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bf0f5dc7-89b8-4f09-a576-3880e3ce297d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5b7a7ee1-1561-4098-8968-b3afb530f9a9"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}

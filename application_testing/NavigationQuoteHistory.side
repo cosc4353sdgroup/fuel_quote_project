@@ -1,0 +1,73 @@
+{
+  {
+    "id": "e6773591-c9f6-4301-96bc-d7abf58b6b6d",
+    "name": "NavigationQuoteHistory",
+    "commands": [{
+      "id": "fa6fcd69-b2c3-4098-8439-21cfb3f55532",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd4d6c26-ff84-4fc9-994e-8938cc4630ce",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1143x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d632092-76d4-4b63-8718-19f35b2c35f9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Fuel/",
+      "targets": [
+        ["linkText=Fuel/", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Fuel/')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Fuel/')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Fuel/')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "87ef46b7-c764-42c4-b069-c5b4f6aac64b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=ul:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.php')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35f431a4-c65d-446b-9efc-45194282e372",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Quote History",
+      "targets": [
+        ["linkText=Quote History", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Quote History')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'history.php')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Quote History')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bf0f5dc7-89b8-4f09-a576-3880e3ce297d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5b7a7ee1-1561-4098-8968-b3afb530f9a9"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}
