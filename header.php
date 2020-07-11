@@ -38,7 +38,7 @@
                 else {
                     echo   '<div class="topnav-right">
                                 <form action="includes/logincheck.inc.php" method="post">
-                                <input type="text" name="mailuid" placeholder="Username/Email...">
+                                <input type="text" name="mailuid" placeholder="Username...">
                                 <input type="password" name="pwd" placeholder="Password...">
                                 <button type="submit" name="login-submit">Login</button>
                                 <a href="signup.php">Register</a>
