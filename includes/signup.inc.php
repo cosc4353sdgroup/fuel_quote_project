@@ -30,7 +30,7 @@ if(isset($_POST['signup-submit'])){
         header("Location: ../signup.php?error=pwdcheckuid&uid=".$username."&mail=".$email);
         exit();
     }
-    //search database for users with the same username
+    //search database for users with the same username or email
     else{
         $sql = "SELECT username FROM users WHERE username=? OR useremail=?";
         $stmt = mysqli_stmt_init($conn);
