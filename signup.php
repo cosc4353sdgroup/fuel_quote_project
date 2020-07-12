@@ -44,10 +44,7 @@ body {
                     echo '<p>Password Must Match</p>';
                 }
                 if($_GET['error']=='usertaken'){
-                    echo '<p>Username Taken</p>';
-                }
-                if($_GET['error']=='pwdcheckuid'){
-                    echo '<p>Password Must Match</p>';
+                    echo '<p>Username or Email Taken</p>';
                 }
             }
             elseif(isset($_GET['signup'])=='success'){
