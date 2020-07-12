@@ -32,20 +32,20 @@ if(isset($_POST['signup-submit'])){
     }
     //search database for users with the same username
     else{
-        $sql = "SELECT userid FROM users WHERE userid=?";
+        $sql = "SELECT username FROM users WHERE username=? OR useremail=?";
         $stmt = mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt,$sql)){
             header("Location: ../signup.php?error=sqlerror");
             exit();
         }
         else{
-            mysqli_stmt_bind_param($stmt, "s", $username);
+            mysqli_stmt_bind_param($stmt, "ss", $username, $email);
             mysqli_stmt_execute($stmt);
             mysqli_stmt_store_result($stmt);
             $resultCheck = mysqli_stmt_num_rows($stmt);
             //error msg for username taken
             if($resultCheck > 0){
-                header("Location: ../signup.php?error=usertaken&mail=".$email);
+                header("Location: ../signup.php?error=usertaken&uid=".$username."&mail=".$email);
                 exit();
             }
             //if passes all if statements above then insert values into the database
