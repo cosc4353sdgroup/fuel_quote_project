@@ -35,6 +35,9 @@ body {
                     echo '<p>No Empty Fields Allowed</p>';
                 }
                 if($_GET['error']=='invalidmailuid'){
+                    echo '<p>Invalid Username and Email</p>';
+                }
+                if($_GET['error']=='invaliduid'){
                     echo '<p>Invalid Username</p>';
                 }
                 if($_GET['error']=='invalidemail'){
