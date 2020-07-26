@@ -82,7 +82,7 @@ body {
             </select><br>
             <label>Date Requested(YYYY-MM-DD): </label><input type="text" name="delDate"
                 placeholder="Delivery Date"><br>
-            <button type="submit" name="quote-submit">Request Quote!</button>
+            <button type="submit" name="quote-submit">Get Quote!</button>
         </form>
 
 
