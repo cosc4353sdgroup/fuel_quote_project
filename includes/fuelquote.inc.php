@@ -12,21 +12,28 @@
     $companyProfit = 1.1;
     $userid = $_SESSION['userid'];
 
+    //run history count query
+
+    $hist_count = mysqli_query($conn,"SELECT COUNT(quoteNum) FROM quotes WHERE userid = $userid;");
+
     //if statement for quote price 
     if($delivery == 'TX'){
         $pricePerGal = $netCost * 1.02;
     }
     else{
         $pricePerGal = $netCost * 1.04;
+    }    
+    if(mysqli_query($conn,"SELECT COUNT(quoteNum) FROM quotes WHERE userid = $userid;") > 0){
+        $pricePerGal = $pricePerGal / 1.01;
     }
     if($gallons > 1000){
         $pricePerGal = $pricePerGal * 1.02;
     }
     else{
-        $pricePerGal = $pricePerGal* 1.03;
+        $pricePerGal = $pricePerGal * 1.03;
     }
-    $pricePerGal = $pricePerGal * $companyProfit;
 
+    $pricePerGal = $pricePerGal * $companyProfit;
     $totalQuote = ($pricePerGal * $gallons);
 
     //sql statement for insterting quote information to the statbase
@@ -36,5 +43,3 @@
         header("Location:../quoteView.php");
         exit();
     }
-
-
