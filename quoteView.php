@@ -25,7 +25,7 @@ body {
 <?php
 /* to include the header box */
   require 'header.php';
-  require 'dbh.inc.php';
+  require 'includes/dbh.inc.php';
 
 ?>
 
